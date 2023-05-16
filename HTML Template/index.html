@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shopee</title>
+
+    <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+  <div class="header-main">
+
+    <div class="container">
+
+      <a href="#" class="header-logo">
+        <img src="../assets/Logo.png" alt="Candy Paradise logo" width="150" height="90">
+      </a>
+
+      <div class="header-search-container">
+
+        <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="header-user-actions">
+
+        <button class="action-btn">
+          <ion-icon name="person-outline"></ion-icon>
+        </button>
+
+        <button class="action-btn">
+          <ion-icon name="heart-outline"></ion-icon>
+          <span class="count">0</span>
+        </button>
+
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+          <span class="count">0</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <nav class="desktop-navigation-menu">
+
+    <div class="container">
+
+      <ul class="desktop-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+            
+
+         <li class="menu-category">
+          <a href="#" class="menu-title">Deals</a> 
+
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Products</a>
+
+          <ul class="dropdown-list">
+
+            <li class="dropdown-item">
+              <a href="#">Chocolate</a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="#">Hard Candies</a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="#">Gummy Candies</a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="#">Sour Candies</a>
+            </li>
+          
+            <li class="dropdown-item">
+              <a href="#">Assorted Candies</a>
+            </li>
+
+          </ul>
+        </li>
+
+        
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Contact</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">About</a>
+        </li>
+
+      </ul>
+
+    </div> 
+
+  </nav>
+
+  <div class="mobile-bottom-navigation">
+
+    <button class="action-btn" data-mobile-menu-open-btn>
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+
+    <button class="action-btn">
+      <ion-icon name="bag-handle-outline"></ion-icon>
+
+      <span class="count">0</span>
+    </button>
+
+    <button class="action-btn">
+      <ion-icon name="home-outline"></ion-icon>
+    </button>
+
+    <button class="action-btn">
+      <ion-icon name="heart-outline"></ion-icon>
+
+      <span class="count">0</span>
+    </button>
+
+    <button class="action-btn" data-mobile-menu-open-btn>
+      <ion-icon name="grid-outline"></ion-icon>
+    </button>
+
+  </div>
+
+</header>
+
+    <!-- start #main-site -->
+        <main id="main-site">
+
+          <div class="banner">
+
+            <div class="container">
+      
+              <div class="slider-container has-scrollbar">
+      
+                <div class="slider-item">
+      
+                  <img src="../assets/banner.jpg" alt="HERSHEY'S GOLD" class="banner-img">
+      
+                  <div class="banner-content">
+      
+                    <p class="banner-subtitle">Trending item</p>
+      
+                    <h2 class="banner-title">HERSHEY'S GOLD with Peanuts & Pretzels (24 Count)</h2>
+      
+                    <p class="banner-text">
+                      starting at &dollar; <b>25</b>.99
+                    </p>
+      
+                    <a href="#" class="banner-btn">Shop now</a>
+      
+                  </div>
+      
+                </div>
+      
+                </div>
+  
+  
+        <!-- Trending -->
+          <section id="special-price">
+            <div class="container">
+              <h4 class="font-rubik font-size-20">Trending</h4>
+              <div id="filters" class="button-group text-right font-baloo font-size-16">
+                <button class="btn is-checked" data-filter="*">All Brand</button>
+                <button class="btn" data-filter=".Apple">Apple</button>
+                <button class="btn" data-filter=".Samsung">Samsung</button>
+                <button class="btn" data-filter=".Redmi">Redmi</button>
+              </div>
+
+              <div class="grid">
+                <div class="grid-item Apple border">
+                 <div class="item py-2" style="width: 200px;">
+                  <div class="product font-rale">
+                    <a href="#"><img src="../assets/products/Trending_1.jpg" alt="product1" class="img-fluid"></a>
+                    <div class="text-center">
+                      <a href="#">
+                        <h6 class="showcase-title">SKITTLES Original Chewy Candy, Party Size, 50 oz Bag</h6>
+                      </a>
+                      <div class="rating text-warning font-size-12">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                      </div>
+                      <div class="price py-2">
+                        <span>$10.34</span>
+                      </div>
+                      <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="grid-item Samsung border">
+                  <div class="item py-2" style="width: 200px;">
+                   <div class="product font-rale">
+                     <a href="#"><img src="../assets/products/Trending_2.jpg" alt="product1" class="img-fluid"></a>
+                     <div class="text-center">
+                      <a href="#">
+                        <h6 class="showcase-title">JOLLY RANCHER Hard Candy, Cinnamon Fire, 13 Ounce</h6>
+                      </a>
+                       <div class="rating text-warning font-size-12">
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="far fa-star"></i></span>
+                       </div>
+                       <div class="price py-2">
+                         <span>$15.44</span>
+                       </div>
+                       <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                     </div>
+                   </div>
+                 </div>
+                 </div>
+                 <div class="grid-item Redmi border">
+                  <div class="item py-2" style="width: 200px;">
+                   <div class="product font-rale">
+                     <a href="#"><img src="../assets/products/Trending_3.jpg" alt="product1" class="img-fluid"></a>
+                     <div class="text-center">
+                      <a href="#">
+                        <h6 class="showcase-title">Sour Patch Watermelon Peg Bag Candy, <br/> 4 Ounce</h6>
+                      </a>
+                       <div class="rating text-warning font-size-12">
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="far fa-star"></i></span>
+                       </div>
+                       <div class="price py-2">
+                         <span>$6.79</span>
+                       </div>
+                       <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                     </div>
+                   </div>
+                 </div>
+                 </div>
+                 <div class="grid-item Apple border">
+                  <div class="item py-2" style="width: 200px;">
+                   <div class="product font-rale">
+                     <a href="#"><img src="../assets/products/Trending_4.jpg" alt="product1" class="img-fluid"></a>
+                     <div class="text-center">
+                      <a href="#">
+                        <h6 class="showcase-title">Milk Chocolate Coins, Gold Half Dollar Chocolate Coins</h6>
+                      </a>
+                       <div class="rating text-warning font-size-12">
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="far fa-star"></i></span>
+                       </div>
+                       <div class="price py-2">
+                         <span>$8.99</span>
+                       </div>
+                       <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                     </div>
+                   </div>
+                 </div>
+                 </div>
+                 <div class="grid-item Samsung border">
+                  <div class="item py-2" style="width: 200px;">
+                   <div class="product font-rale">
+                     <a href="#"><img src="../assets/products/Trending_5.jpg" alt="product1" class="img-fluid"></a>
+                     <div class="text-center">
+                      <a href="#">
+                        <h6 class="showcase-title">Snack Owl Vegan Sour Gummy Candy (Watermelon Slices)</h6>
+                      </a>
+                       <div class="rating text-warning font-size-12">
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="fas fa-star"></i></span>
+                         <span><i class="far fa-star"></i></span>
+                       </div>
+                       <div class="price py-2">
+                         <span>$20.34</span>
+                       </div>
+                       <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                     </div>
+                   </div>
+                 </div>
+                 </div>
+                 <div class="grid-item  Redmi border ">
+                  <div class="item py-2" style="width: 200px;">
+                    <div class="product font-rale">
+                      <div class="d-flex flex-column">
+                        <a href="#"><img src="../assets/products/Trending_6.jpg" class="img-fluid" alt="pro1"></a>
+                        <div class="text-center">
+                          <a href="#">
+                            <h6 class="showcase-title">JOYRIDE by Project 7 Keto Gummies, Sour Gummy Worms</h6>
+                          </a>
+                          <div class="rating text-warning font-size-12">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                          </div>
+                          <div class="price py-2">
+                            <span>$23.56</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item  Redmi border ">
+                  <div class="item py-2" style="width: 200px;">
+                    <div class="product font-rale">
+                      <div class="d-flex flex-column">
+                        <a href="#"><img src="../assets/products/Trending_7.jpg" class="img-fluid" alt="pro1"></a>
+                        <div class="text-center">
+                          <a href="#">
+                            <h6 class="showcase-title">Project 7 Low Sugar Sour Gummy Bears Low Calorie Snacks (8 Pack)</h6>
+                          </a>
+                          <div class="rating text-warning font-size-12">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                          </div>
+                          <div class="price py-2">
+                            <span>$22.85</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item  Redmi border ">
+                  <div class="item py-2" style="width: 200px;">
+                    <div class="product font-rale">
+                      <div class="d-flex flex-column">
+                        <a href="#"><img src="../assets/products/Trending_8.jpg" class="img-fluid" alt="pro1"></a>
+                        <div class="text-center">
+                          <a href="#">
+                            <h6 class="showcase-title">Project 7 Low Sugar Sour Apple Rings Low Calorie Snacks (8 Pack)</h6>
+                          </a>
+                          <div class="rating text-warning font-size-12">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                          </div>
+                          <div class="price py-2">
+                            <span>$20.99</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item  Redmi border">
+                  <div class="item py-2" style="width: 200px;">
+                    <div class="product font-rale">
+                      <div class="d-flex flex-column">
+                        <a href="#"><img src="../assets/products/Trending_9.jpg" class="img-fluid" alt="pro1"></a>
+                        <div class="text-center">
+                          <a href="#">
+                            <h6 class="showcase-title">Assorted Easter Basket Candy, 31.06 oz, 100 Piece Bag</h6>
+                          </a>
+                          <div class="rating text-warning font-size-12">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                          </div>
+                          <div class="price py-2">
+                            <span>$10.76</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item Apple border  " >
+                  <div class="item py-2" style="width: 200px;">
+                    <div class="product font-rale">
+                      <div class="d-flex flex-column">
+                        <a href="#"><img src="../assets/products/Trending_10.jpg" class="img-fluid" alt="pro1"></a>
+                        <div class="text-center">
+                          <a href="#">
+                            <h6 class="showcase-title">REESE'S Milk Chocolate and Peanut Butter Candy Dipped Animal Crackers</h6>
+                          </a>
+                          <div class="rating text-warning font-size-12">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                          </div>
+                          <div class="price py-2">
+                            <span>$252</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- !Special Price -->
+
+        <!-- Banner Ads 
+          <section id="banner_adds">
+            <div class="container py-5 text-center">
+              <img src="../assets/Free.jpg" alt="banner1" class="img-fluid" width="700px" >
+            </div>
+          </section>
+         !Banner Ads  -->
+
+                <!--Top Sale-->
+                <section id="top-sale">
+                  <div class="container py-5">
+                    <h4 class="font-rubik font-size-20">Top Sale</h4>
+                    <hr>
+                    <!-- owl carousel -->
+                      <div class="owl-carousel owl-theme">
+                        <div class="item py-2">
+                          <div class="product font-rale">
+                            <a href="#"><img src="../assets/products/New_Arrivals1.jpg" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                              <a href="#">
+                                <h6 class="showcase-title">LIFE SAVERS Hard Candy 5 Flavors, 50-Ounce Party Size Bag</h6>
+                              </a>
+                              <div class="rating text-warning font-size-12">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                              </div>
+                              <div class="price py-2">
+                                <span>$10.78</span>
+                              </div>
+                              <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item py-2">
+                          <div class="product font-rale">
+                            <a href="#"><img src="../assets/products/New_Arrivals2.jpg" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                              <a href="#">
+                                <h6 class="showcase-title">LIFE SAVERS Hard Candy 5 Flavors, 50-Ounce Party Size Bag</h6>
+                              </a>
+                              <div class="rating text-warning font-size-12">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                              </div>
+                              <div class="price py-2">
+                                <span>$12.18</span>
+                              </div>
+                              <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item py-2">
+                          <div class="product font-rale">
+                            <a href="#"><img src="../assets/products/New_Arrivals3.jpg" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                              <a href="#">
+                                <h6 class="showcase-title">Mentos Candy, Mint Chewy Candy Roll, Fruit, Non Melting, 1.32 Oz (Pack of 6)</h6>
+                              </a>
+                              <div class="rating text-warning font-size-12">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                              </div>
+                              <div class="price py-2">
+                                <span>$3.00</span>
+                              </div>
+                              <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item py-2">
+                          <div class="product font-rale">
+                            <a href="#"><img src="../assets/products/New_Arrivals4.jpg" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                              <a href="#">
+                                <h6 class="showcase-title">Albanese World's Best 12 Flavor Gummi Bears, 5lbs of Candy, A Great Easter Gift</h6>
+                              </a>
+                              <div class="rating text-warning font-size-12">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                              </div>
+                              <div class="price py-2">
+                                <span>$12.99</span>
+                              </div>
+                              <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item py-2">
+                          <div class="product font-rale">
+                            <a href="#"><img src="../assets/products//New_Arrivals5.jpg" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                              <a href="#">
+                                <h6 class="showcase-title">Sour Jacks Candy Gummy Snacks Variety Pack, Original & Watermelon (Pack of 12)</h6>
+                              </a>
+                              <div class="rating text-warning font-size-12">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                              </div>
+                              <div class="price py-2">
+                                <span>$15.33</span>
+                              </div>
+                              <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item py-2">
+                          <div class="product font-rale">
+                            <div class="d-flex flex-column">
+                              <a href="#"><img src="../assets/products/New_Arrivals6.jpg" class="img-fluid" alt="pro1"></a>
+                              <div class="text-center">
+                                <a href="#">
+                                  <h6 class="showcase-title">Life Savers Gummies 5 Flavors Candy, 14.5-Ounce Sharing Size Bag</h6>
+                                </a>
+                                <div class="rating text-warning font-size-12">
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                  <span>$2.82</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item py-2">
+                          <div class="product font-rale">
+                            <div class="d-flex flex-column">
+                              <a href="#"><img src="../assets/products/New_Arrivals7.jpg" class="img-fluid" alt="pro1"></a>
+                              <div class="text-center">
+                                <a href="#">
+                                  <h6 class="showcase-title">REESE'S Milk Chocolate and Peanut Butter Egg, 6 oz Gift Boxes (6 Count)</h6>
+                                </a>
+                                <div class="rating text-warning font-size-12">
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                  <span>$27.99</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- !owl carousel -->
+                  </div>
+                </section>
+              <!-- !Top Sale -->
+
+    
+
+        </main>
+    <!-- !start #main-site -->
+
+    <!-- start #footer -->
+        <footer id="footer" class="bg-dark text-white py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-12">
+                <img src="../assets/Logo.png" alt="Candy Paradise logo" width="150" height="90">
+              </div>
+              <div class="col-lg-4 col-12">
+                <h4 class="font-rubik font-size-20">Newsletter</h4>
+                <form class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Email *">
+                  </div>
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-2 col-12">
+                <h4 class="font-rubik font-size-20">Information</h4>
+                <div class="d-flex flex-column flex-wrap">
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-12">
+                <h4 class="font-rubik font-size-20">Account</h4>
+                <div class="d-flex flex-column flex-wrap">
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newsletters</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="copyright text-center bg-dark text-white py-2">
+          <p class="font-rale font-size-14">&copy; Copyrights 2023. Candy Paradise</p>
+        </div>
+    <!-- !start #footer -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel Js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <!--  isotope plugin cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+
+    <!-- Custom Javascript -->
+    <script src="index.js"></script>
+
+    
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
